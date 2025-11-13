@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     background-image: url(images/fondo1.jpg);
     background-color: #b8b5b5;
@@ -61,7 +61,12 @@ nav a:hover {
     margin-left: 0.6rem;
     width: 35%;
     box-shadow: 0.3rem 0.3rem 0.2rem #0000000a;
-    
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.bloque:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0.5rem 0.5rem 1rem #00000020;
 }
 
 .bloque h2 {
@@ -77,6 +82,7 @@ nav a:hover {
     margin-bottom: 0.3rem;
     margin-top: 0.5rem;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .foto-perfil {
@@ -128,6 +134,7 @@ nav a:hover {
     flex: 1;
     margin-bottom: 0.3rem;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 #proyectos h3 {
@@ -147,6 +154,7 @@ nav a:hover {
     font-style: italic;
     margin-bottom: 0.5rem;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 #proyectos ul li {
@@ -235,6 +243,7 @@ nav a:hover {
     font-style: italic;
     margin-bottom: 0.5rem;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 #experiencia ul li {
@@ -268,3 +277,4 @@ footer {
     font-weight: bold;
     border-top: 0.1rem solid #000000;
 }
+
