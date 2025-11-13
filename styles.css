@@ -377,3 +377,45 @@ footer {
     padding: 0.8rem;
   }
 }
+
+/*-Hamburguesa-*/
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+    text-align: left;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .menu-toggle:checked + .menu-btn + nav {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    display: block;
+  }
+}
